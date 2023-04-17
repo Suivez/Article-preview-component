@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.813rem;
+    font-weight: 500;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main-content{
+    width: 750px;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    border-radius: 12px;
+}
+.image-cover{
+    width: 41%;
+    height: auto;
+    background-image: url("images/drawers.jpg");
+    background-size: cover;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+.right-section{
+    width: 59%;
+    height: 100%;
+    padding: 40px;
+}
+.title{
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #48556a;
+}
+p{
+    color: hsl(214, 17%, 51%);
+    line-height: 1.3rem;
+}
+.profile-share{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.avatar img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.profile-name{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.profile-name span:nth-of-type(1){
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+.profile-name span:nth-of-type(2){
+    color: hsl(212, 23%, 69%);
+}
+.button-content{
+    display: flex;
+    justify-content: center;
+}
+.share-box{
+    display: none;
+    position: absolute;
+    width: 280px;
+    background-color: hsl(217, 19%, 35%);
+    top: 47%;
+    border-radius: 13px;
+    color: white;
+}
+.share-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+.share-content i:hover{
+    color: hsl(212, 23%, 69%);
+    cursor: pointer;
+}
+.share-content span{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: hsl(212, 23%, 69%);
+}
+.arrow{
+    width: 20px;
+    height: 20px;
+    background-color: hsl(217, 19%, 35%);
+    position: absolute;
+    top: 84%;
+    right: 46%;
+    transform:  rotate(45deg);
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(210, 46%, 95%);
+    padding: 10px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: hsl(217, 19%, 35%);
+    cursor: pointer;
+}
+button:hover{
+    background-color: #9eafc2;
+    color: hsl(210, 46%, 95%);
+}
+.socials{
+    display: none;
+}
+@media (max-width: 650px){
+    main{
+        height: auto;
+    }
+    .main-content{
+        margin: 20px;
+        flex-direction: column;
+        width: 100%;
+        border-bottom-left-radius: 12px;
+    }
+    .image-cover{
+        width: 100%;
+        height: 300px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 12px;
+    }
+    .right-section{
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    .profile-share{
+        height: 80px;
+        width: 100%;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+    .title{
+        padding-top: 40px;
+    }
+    .title, .profile-share, p{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .profile{
+        display: flex;
+    }
+    .share-content{
+        padding: 0;
+    }
+    .socials{
+        display: none;
+        width: 80%;
+        margin-right: 10px;
+        justify-content: flex-start;
+        color: white;
+    }
+}
